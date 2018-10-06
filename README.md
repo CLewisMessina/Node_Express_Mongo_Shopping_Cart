@@ -20,7 +20,7 @@ Features:
 
 **Code Tools:** MS Visual Studio Code
 
-**Working Example:** https://peaceful-dusk-46571.herokuapp.com/ 
+**Working Example:** https://afternoon-temple-57168.herokuapp.com/ 
 
 **User Notes:** 
 * Users must sign-up and be logged in to make purchases. 
