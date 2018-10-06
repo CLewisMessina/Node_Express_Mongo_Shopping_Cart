@@ -10,7 +10,7 @@ const createError = require('http-errors'),
       flash = require('connect-flash'),
       validator = require('express-validator'),
       MongoStore = require('connect-mongo')(session),
-      seedDB = require("seed/product-seeder");
+      seedDB = require("./seed/product-seeder");
 
 
 var indexRouter = require('./routes/index');
