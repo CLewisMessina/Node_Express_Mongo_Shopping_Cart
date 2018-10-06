@@ -1,0 +1,22 @@
+SEED DATA
+
+Camera Links:
+Agfamatic:			https://i.postimg.cc/SK7Rfjdm/agfamatic.jpg
+Canon AE:			https://i.postimg.cc/GhHBnLLj/canon-ae1.jpg
+Kodak Instamatic:	https://i.postimg.cc/VvHd0TRM/kodak-instamatic.jpg
+Minolta-X0:			https://i.postimg.cc/ncgXHyMf/minolta-x0.jpg
+Olympus Trip-35:	https://i.postimg.cc/fWH3PtNL/olympus-trip35.jpg
+Pentax-Me:			https://i.postimg.cc/5ytX01wb/pentax-me.jpg
+Polaroid-95A Land:	https://i.postimg.cc/K8TR40gk/polaroid-95a-land-camera.jpg
+Polaroid Pronto:	https://i.postimg.cc/k5dDSWxj/polaroid-pronto-600.jpg
+Rolleiflex:			https://i.postimg.cc/W354xKxK/rolleiflex.jpg
+Sony Canon Lens:	https://i.postimg.cc/Jnrn6mYZ/sony-canon-lens.jpg
+Sony Canon Zoom:	https://i.postimg.cc/BbynnFSB/sony-canon-zoom.jpg
+Yoshika LM:			https://i.postimg.cc/ryYmJB1R/yoshika-lm.jpg
+Zeiss Lenses:		https://i.postimg.cc/L5hsSDps/zeiss-lenses.jpg
+
+
+show dbs
+use shopping
+db.products.find()
+db.products.find().pretty()

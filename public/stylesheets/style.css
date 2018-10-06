@@ -1,0 +1,22 @@
+.navbar-brand{
+    color: #fff !important;
+    background-color:red;
+}
+
+.navbar-brand:hover{
+    background-color: #353535 !important;
+}
+
+.thumbnail img {
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.description {
+    color: #7f7f7f;
+}
+
+.price {
+   font-weight: bold;
+   font-size: 16px; 
+}

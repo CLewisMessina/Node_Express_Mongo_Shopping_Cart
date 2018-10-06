@@ -1,0 +1,72 @@
+
+Vy Nguyen
+1 year ago
+How come I'm getting this Stripe error when trying to submit the checkout form: "Must provide source or customer" ?﻿
+
+9
+
+
+Arshdeep Singh Saini
+Arshdeep Singh Saini
+1 year ago
+Yeah same here.﻿
+
+
+
+Arshdeep Singh Saini
+Arshdeep Singh Saini
+1 year ago
+For me the problem was that I was using v3 of Stripe's js. I used v2 and it works fine.
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>﻿
+
+
+
+Dipesh Budhiraja
+Dipesh Budhiraja
+11 months ago
+it's not getting this fixed although i'm using version2﻿
+
+1
+
+
+Dipesh Budhiraja
+Dipesh Budhiraja
+11 months ago
+hey i got the solution to this replace "source: req.body.stripeToken" in index.js file with "source: "tok_mastercard". it worked for me. please correct me if i'm wrong﻿
+
+3
+
+
+Marius Ailisoaie
+Marius Ailisoaie
+10 months ago (edited)
+Thank you very much Dipesh! This helped me as well. Have a good day!﻿
+
+
+
+Harsh Jain
+Harsh Jain
+9 months ago
+Ty very much﻿
+
+
+
+Bob M
+Bob M
+9 months ago
+Dipesh.  This won't work in the long run. All you are doing is removing the variable and hard coding the source called tok_mastercard.  we will want the variable in for live production because it returns the token from Stripe.  This is issue has something to do with the jquery in checkout.js not working and returning the variable.﻿
+
+
+
+Wildstyles
+Wildstyles
+9 months ago
+try to change "var token = result.token" to "var token = result.token.id" in checkout.js file﻿
+
+
+
+george gabriel busuioc
+george gabriel busuioc
+4 months ago
+Worked for me. Many thanks﻿
