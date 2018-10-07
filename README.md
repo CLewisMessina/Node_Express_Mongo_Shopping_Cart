@@ -1,7 +1,7 @@
 # Node Express Mongo Shopping Cart
 
 
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/1LandingPg.png)
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/1LandingPg.jpg)
 
 **Landing Page**
 
@@ -27,7 +27,7 @@
 
 
 
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/2UserMgt.png)
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/2UserMgt.jpg)
 
 **Sign Up/Sign In Navigation**
 * Users may add items to cart but must sign-up and/or be logged in to make purchases. 
@@ -64,7 +64,7 @@
 
 
 
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/7CompletedTrans.png)
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/7CompletedTrans.jpg)
 **Succesful Transaction Route and Flash Message**
 
 
