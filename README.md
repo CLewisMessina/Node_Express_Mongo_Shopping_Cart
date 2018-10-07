@@ -1,11 +1,5 @@
 # Node Express Mongo Shopping Cart
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/1LandingPg.jpg)
-
-**Landing Page**
-
-
 ## Features:
 * User Authentication via Passport
 * User Sign Up
@@ -25,37 +19,30 @@
 
 **Code Tools:** MS Visual Studio Code
 
+**Landing Page**
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/1LandingPg.jpg)
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/2UserMgt.jpg)
 
 **Sign Up/Sign In Navigation**
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/2UserMgt.jpg)
 * Users may add items to cart but must sign-up and/or be logged in to make purchases. 
 
 
-
-
+**Sign Up Page**
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/3SignUp.png)
 
-**Sign Up Page**
 
-
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/4Cart.png)
 **Shopping Cart**
-
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/4Cart.png)
 * Users may review items in cart and change quantities.
 
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/5RemoveItems.png)
 **Item Removal**
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/5RemoveItems.png)
 
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/6Checkout.png)
 **Checkout Page**
-
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/6Checkout.png)
 * Purchases must be made with valid credit card number.
 * Demo site code is set to use test/dummy credit card number: **4242 4242 4242 4242**. 
 * Credit Card expiration date must be any month/year in future less than 2100AD.
@@ -63,25 +50,18 @@
 * Demo site code is set up for 3 hour user sessions before Stripe token expires and new login required
 
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/7CompletedTrans.jpg)
 **Succesful Transaction Route and Flash Message**
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/7CompletedTrans.jpg)
 
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/8ProfileOrders.png)
 **Profile Page**
-
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/8ProfileOrders.png)
 * Users may see previous orders on User Profile Page.
 
 
-
-![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/9OrderProfilewLogout.png)
 **Logout Navigation**
-
+![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/9OrderProfilewLogout.png)
 * Signed in users may log out through user management navigation dropdown.
-
-
 
 ## REFACTOR NOTES
 Project updates may include:
