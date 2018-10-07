@@ -1,7 +1,12 @@
 # Node Express Mongo Shopping Cart
+
+
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/1LandingPg.png)
 
-Features:
+**Landing Page**
+
+
+## Features:
 * User Authentication via Passport
 * User Sign Up
 * User Sign In/Out
@@ -20,10 +25,15 @@ Features:
 
 **Code Tools:** MS Visual Studio Code
 
+
+
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/2UserMgt.png)
 
 **Sign Up/Sign In Navigation**
 * Users may add items to cart but must sign-up and/or be logged in to make purchases. 
+
+
+
 
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/3SignUp.png)
 
@@ -37,8 +47,11 @@ Features:
 * Users may review items in cart and change quantities.
 
 
+
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/5RemoveItems.png)
 **Item Removal**
+
+
 
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/6Checkout.png)
 **Checkout Page**
@@ -49,23 +62,24 @@ Features:
 * Credit Card CVC code may be any random 3 digit code.
 * Demo site code is set up for 3 hour user sessions before Stripe token expires and new login required
 
+
+
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/7CompletedTrans.png)
 **Succesful Transaction Route and Flash Message**
+
+
 
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/8ProfileOrders.png)
 **Profile Page**
 
 * Users may see previous orders on User Profile Page.
 
+
+
 ![](https://github.com/CLewisMessina/Node_Express_Mongo_Shopping_cart/blob/master/9OrderProfilewLogout.png)
 **Logout Navigation**
 
 * Signed in users may log out through user management navigation dropdown.
-
-
-
-
-
 
 
 
