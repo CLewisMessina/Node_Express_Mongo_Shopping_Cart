@@ -19,12 +19,23 @@ let app = express();
 
 // Mongoose ORM
 // Local Mongoose Connect:
-// mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true});
+      // mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true});
 
 
-// Environment letiable  + Local Mongoose Connect
+// Environment variable  + Local Mongoose Connect
+      // let url = process.env.DATABASEURL || "mongodb://localhost:27017/shopping"
+      // mongoose.connect(url, { useNewUrlParser: true});
+
+//  Environment variable  + Local Mongoose Connect Version 2 w/ callback
 let url = process.env.DATABASEURL || "mongodb://localhost:27017/shopping"
-mongoose.connect(url, { useNewUrlParser: true});
+mongoose.connect(url, { useNewUrlParser: true},
+  function(err, client){
+    if(err){
+      console.log(err);
+    }
+    console.log('connect!!!');
+  });
+
 
 require('./config/passport');
 
