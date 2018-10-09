@@ -1,8 +1,8 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-var bcrypt = require('bcrypt-nodejs');
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
+let bcrypt = require('bcrypt-nodejs');
 
-var userSchema = new Schema({
+let userSchema = new Schema({
     email: {type: String, required: true},
     password: {type: String, required: true}
 });

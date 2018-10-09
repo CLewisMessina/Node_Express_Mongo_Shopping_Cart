@@ -1,12 +1,12 @@
-var Product = require('../models/product');
-var mongoose = require('mongoose');
+let Product = require('../models/product');
+let mongoose = require('mongoose');
 
-var url = process.env.DATABASEURL || "mongodb://localhost:27017/shopping"
+let url = process.env.DATABASEURL || "mongodb://localhost:27017/shopping"
  mongoose.connect(url, { useNewUrlParser: true});
 // mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true});
 
 
-var products = [
+let products = [
     new Product({
         imagePath: 'https://i.postimg.cc/SK7Rfjdm/agfamatic.jpg',
         title: 'Agfamatic',
@@ -51,9 +51,9 @@ var products = [
 
 ];
 
-var done = 0;
+let done = 0;
 
-for (var i = 0; i < products.length; i++){
+for (let i = 0; i < products.length; i++){
     products[i].save(function(err, result){
         done++;
         if(done === products.length){

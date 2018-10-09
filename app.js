@@ -1,4 +1,4 @@
-var createError = require('http-errors'),
+let createError = require('http-errors'),
       express = require('express'),
       path = require('path'),
       cookieParser = require('cookie-parser'),
@@ -9,27 +9,24 @@ var createError = require('http-errors'),
       passport = require('passport'),
       flash = require('connect-flash'),
       validator = require('express-validator'),
-      MongoStore = require('connect-mongo')(session),
-      seedDB = require("./seed/product-seeder");
+      MongoStore = require('connect-mongo')(session);
+
+let indexRouter = require('./routes/index');
+let userRoutes = require('./routes/user');
 
 
-var indexRouter = require('./routes/index');
-var userRoutes = require('./routes/user');
-
-
-var app = express();
+let app = express();
 
 // Mongoose ORM
 // Local Mongoose Connect:
 // mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true});
 
 
-// Environment Variable  + Local Mongoose Connect
-var url = process.env.DATABASEURL || "mongodb://localhost:27017/shopping"
+// Environment letiable  + Local Mongoose Connect
+let url = process.env.DATABASEURL || "mongodb://localhost:27017/shopping"
 mongoose.connect(url, { useNewUrlParser: true});
 
 require('./config/passport');
-
 
 
 // view engine setup

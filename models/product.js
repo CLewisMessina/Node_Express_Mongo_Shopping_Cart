@@ -1,7 +1,7 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
-var schema = new Schema({
+let schema = new Schema({
     imagePath: {type: String, required: true},
     title: {type: String, required: true},
     description: {type: String, required: true},

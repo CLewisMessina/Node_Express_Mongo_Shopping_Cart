@@ -1,11 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var csrf = require('csurf');
-var passport = require('passport');
-var Order = require('../models/order');
-var Cart = require('../models/cart');
+let express = require('express');
+let router = express.Router();
+let csrf = require('csurf');
+let passport = require('passport');
+let Order = require('../models/order');
+let Cart = require('../models/cart');
 
-var csrfProtection = csrf();
+let csrfProtection = csrf();
 router.use(csrfProtection);
 
 // USER PROFILE ROUTE
@@ -14,7 +14,7 @@ router.get('/profile', isLoggedIn, function (req, res, next) {
         if(err){
             return res.write('Error!');
         }
-        var cart;
+        let cart;
         orders.forEach(function(order){
             cart = new Cart(order.cart);
             order.items = cart.generateArray();
@@ -35,7 +35,7 @@ router.use('/', notLoggedIn, function(req, res, next){
 
 // USER SIGNUP ROUTES
 router.get('/signup', function (req, res, next) {
-    var messages = req.flash('error');
+    let messages = req.flash('error');
     res.render('user/signup', {
         csrfToken: req.csrfToken(),
         messages: messages,
@@ -48,7 +48,7 @@ router.post('/signup', passport.authenticate('local.signup', {
     failureFlash: true
 }), function(req, res, next){
     if(req.session.oldUrl){
-        var oldUrl = req.session.oldUrl;
+        let oldUrl = req.session.oldUrl;
         req.session.oldUrl = null;
         res.redirect(oldUrl);
     } else {
@@ -60,7 +60,7 @@ router.post('/signup', passport.authenticate('local.signup', {
 
 // USER SIGNIN ROUTES
 router.get('/signin', function (req, res, next) {
-    var messages = req.flash('error');
+    let messages = req.flash('error');
     res.render('user/signin', {
         csrfToken: req.csrfToken(),
         messages: messages,
@@ -73,7 +73,7 @@ router.post('/signin', passport.authenticate('local.signin', {
     failureFlash: true
 }), function(req, res, next){
     if(req.session.oldUrl){
-        var oldUrl = req.session.oldUrl;
+        let oldUrl = req.session.oldUrl;
         req.session.oldUrl = null;
         res.redirect(oldUrl);
     } else {
