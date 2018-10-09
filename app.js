@@ -1,4 +1,4 @@
-const createError = require('http-errors'),
+var createError = require('http-errors'),
       express = require('express'),
       path = require('path'),
       cookieParser = require('cookie-parser'),
